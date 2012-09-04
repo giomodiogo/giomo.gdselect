@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="giomo.select.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#test').gdselect({
+					'optionsSelect': 
+						[
+							{'value' : 1, 'description' : 'test1', 'urlImg' :'http://www.suportephpbb.com.br/forum/adm/images/icon_edit.gif'},
+							{'value' : 2, 'description' : 'test2', 'urlImg' : 'http://icons.iconarchive.com/icons/icondrawer/flags/16/Brazil-icon.png'},
+							{'value' : 3, 'description' : 'test3'}
+						],
+						'cssConfigureOpts': 
+						[
+							{'name' : "padding-left", "value" : "20px"}
+						],
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div><select id='test'></select></div>
+	</body>
+</html>
